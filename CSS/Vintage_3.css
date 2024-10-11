@@ -1,0 +1,442 @@
+html
+{
+    width: 1150px;
+    text-align: center;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+.first-web
+{
+    display: flex;
+}
+.logo
+{
+    margin-left: -10px;
+}
+.search-bar
+{
+    border: 2px solid;
+    margin-left: 60px;
+    margin-right: 92px;
+    width: 550px;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 10px;
+    color: #FF9933;
+}
+.search-bar input
+{
+    height: 40px;
+    width: 500px;
+    font-size: 16px;
+    border: none;
+    margin-left: 0px;
+    outline: 0;
+}
+.kinhlup
+{
+    margin-left: 5px;
+}
+.lienhe
+{
+    
+    margin-right: 30px;
+}
+.giohang
+{
+    
+    margin-right: 10px;
+    padding: 15px 0 15px 0;
+}
+.sohang
+{
+    
+    padding: 25px 0 25px 0;
+}
+.first-menu /* Menu ngang cấp 1, menu ông */
+{
+    list-style-type: none ; /*Ẩn chấm tròn trước chữ của menu ngang(danh sách không có thứ tự)*/
+    padding: 7.5px 200px 1px 20px; /*Gồm padding-top, padding-right, padding-bottom và padding-left*/
+    margin-left: -260px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.first-menu1 /* Các phần tử của menu ngang cấp 1 */
+{
+    display: inline; /*Danh sách nằm theo hàng ngang*/
+    padding: 1px 20px 1px;
+    position: relative;
+}
+a
+{
+    text-decoration: none; 
+    color: black;
+    transition: color 0.5s;
+}
+a:hover
+{
+    color: red;
+}
+.second-menu /* Menu dọc cấp 2, menu bố */
+{
+    position: absolute;
+    padding-top: 5px;
+    border-bottom: 1px solid rgb(14, 10, 2);
+    margin-left: 380px;
+    list-style-type: none;
+    text-align: left;
+    width: 180px;
+    padding: 5px 5px;
+    font-size: 16px;
+    background-color: #a1b2b2;
+    display: none;
+}
+.first-menu li:hover ul.second-menu
+{
+    display: block;
+}
+.second-menu1 /* Các phần tử của menu dọc cấp 2 */
+{
+    padding: 8px 0px;
+    border-bottom: 1px solid rgb(174, 170, 170);
+    left: 0px;
+    
+}
+.second-menu1:hover
+{
+    border-bottom: 1px solid rgb(248, 243, 243);
+}
+.third-menu /* Menu dọc cấp 3, menu con */
+{
+    display: none;
+    list-style: none;
+    padding: 8px 0px;
+    margin-left: 186px;
+    margin-top: -35px;
+    width: 200px; 
+    position: absolute; /* Để viết đè lên phần tử cha mà không làm thay đổi vị trí ban đầu của cha */
+}
+
+.second-menu li:hover ul.third-menu
+{
+    display: block;
+    list-style: none;
+}
+.third-menu1 /* Các phần tử của menu dọc cấp 3 */
+{
+    text-decoration: none;
+    background-color: #a1b2b2;
+    border-bottom: 1px solid rgb(174, 170, 170);
+    padding: 8px 0px;
+}
+.third-menu1:hover
+{
+    border-bottom: 1px solid rgb(248, 243, 243);
+}
+.second2-menu
+{
+    position: absolute;
+    background-color: #a1b2b2;
+    padding-top: 5px;
+    border-bottom: 1px solid darkgoldenrod;
+    margin-left: 520px;
+    list-style-type: none;
+    text-align: left;
+    width: 180px;
+    padding: 5px 5px;
+    font-size: 16px;
+    display: none;
+}
+.first-menu li:hover ul.second2-menu
+{
+    display: block;
+}
+.second2-menu1
+{
+    padding: 8px 0px;
+    border-bottom: 1px solid rgb(174, 170, 170);
+
+}
+.second2-menu1:hover
+{
+    border-bottom: 1px solid rgb(248, 243, 243);
+}
+.title
+{
+    margin-top: -100px;
+}
+h1
+{
+    font-size: 40px;
+    color: #4a2967;
+}
+.content
+{
+    display: flex;
+}
+.menudoc
+{
+    text-align: left;
+    width: 250px;
+}
+.menudoc1
+{
+    list-style: none;
+    text-align: left;
+    margin-left: 5px;
+    padding-left: 0;
+}
+.menudoc1_1
+{
+    padding: 5px 5px;
+    position: relative;
+}
+.menudoc1_12
+{
+    padding: 5px 5px;
+    position: relative;
+    margin-top: -30px;
+}
+.menu-container3 {
+  position: relative;
+}
+
+.menu3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-button {
+  border: none;
+  cursor: pointer;
+  margin-left: 30px;
+
+}
+
+.dropdown {
+  display: none;
+  margin-left: 230px;
+  top: 40px; /* Adjust based on the height of the menu button */
+  left: 0;
+  z-index: 1;
+  width: 200px;
+  list-style-type: none;
+  font-size: 14px;
+  margin-top: -25px;
+}
+.dropdownI
+{
+  list-style: none;
+  padding: 5px 0;
+}
+
+.dropdown2 {
+  display: none;
+  margin-left: 230px;
+  top: 40px; /* Adjust based on the height of the menu button */
+  left: 0;
+  z-index: 1;
+  width: 200px;
+  list-style-type: none;
+  font-size: 14px;
+  margin-top: -25px;
+}
+.dropdown3 {
+    display: none;
+    margin-left: 230px;
+    top: 40px; /* Adjust based on the height of the menu button */
+    left: 0;
+    z-index: 1;
+    width: 200px;
+    list-style-type: none;
+    font-size: 14px;
+    margin-top: -25px;
+  }
+  .dropdown4 {
+    display: none;
+    margin-left: 230px;
+    top: 40px; /* Adjust based on the height of the menu button */
+    left: 0;
+    z-index: 1;
+    width: 200px;
+    list-style-type: none;
+    font-size: 14px;
+    margin-top: -25px;
+  }
+  .dropdown5 {
+    display: none;
+    margin-left: 230px;
+    top: 40px; /* Adjust based on the height of the menu button */
+    left: 0;
+    z-index: 1;
+    width: 200px;
+    list-style-type: none;
+    font-size: 14px;
+    margin-top: -25px;
+  }
+.phansanpham
+{
+    display: flex;
+    width: 900px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.tem
+{
+    margin-left: 30px;
+}
+.temm
+{
+    text-align: left;
+    margin-top: 10px;
+    background-color: #FF9933;
+    width: 95px;
+    padding: 5px 5px;
+    font-size: 12px;
+}
+.nd
+{
+    
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: left;
+    
+}
+.cre
+{
+    text-align: left;
+    margin: 10px 0;
+}
+.ndd
+{
+    text-align: left;
+    margin: 10px 0;
+}
+.nddd
+{
+    text-align: left;
+    margin: 10px 0;
+}
+.spkhuyenmai
+{
+    margin-top: 50px;
+}
+.dienthoai
+{
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.sp
+{
+    margin-right: 20px;
+    margin-top: -10px;
+}
+.phansanpham2
+{
+    display: flex;
+    width: 863px;
+    margin-left: 270px;
+    margin-top: -170px;
+}
+.temm2
+{
+    text-align: left;
+    margin-top: 10px;
+    background-color: #FF9933;
+    width: 175px;
+    padding: 5px 5px;
+    font-size: 12px;
+}
+.phansanpham3
+{
+    display: flex;
+    width: 863px;
+    margin-left: 270px;
+    margin-top: 100px
+}
+.temm3
+{
+    text-align: left;
+    margin-top: 10px;
+    background-color: #FF9933;
+    width: 85px;
+    padding: 5px 5px;
+    font-size: 12px;
+}
+.footer
+{
+    margin-top: 20px;
+    background-color: #DDDDDD;
+}
+.shine
+{
+    text-decoration: none;
+}
+.shine:hover
+{
+    text-decoration: underline; /* Hiện gạch chân khi rê chuột vào */
+    color: #FF9933; /* Đổi màu chữ khi rê chuột qua */
+}
+#list-down
+{
+    list-style-type: none ;
+    text-align: left;
+    padding-top: 50px;
+}
+.child-list-down
+{
+    display: inline-flex;
+    margin: 15px ;
+}
+.list-down-first
+{
+    list-style-type: none ;
+    margin-left: -133px;
+    margin-top: 30px;
+}
+.list-down-second
+{
+    list-style-type: none ;
+    margin-left: -104px;
+    margin-top: 30px;
+}
+.list-down-third
+{
+    list-style-type: none ;
+    margin-left: -126px;
+    margin-top: 30px;
+}
+.list-down-fouth
+{
+    list-style-type: none ;
+    margin-left: -126px;
+    margin-top: 30px;
+}
+.list-down-fifth
+{
+    width: 300px;
+    list-style-type: none ;
+    margin-left: -190px;
+    margin-top: 30px;
+    
+}
+.option
+{
+    margin-top: 10px;
+}
+.brand
+{
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.user
+{
+    width: 50px;
+    margin-left: 1330px;
+    margin-top: -30;
+}

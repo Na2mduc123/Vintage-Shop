@@ -1,0 +1,742 @@
+html
+{
+    width: 1150px;
+    text-align: center;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+.first-web
+{
+    display: flex;
+}
+.logo
+{
+    margin-left: -10px;
+}
+.search-bar
+{
+    border: 2px solid;
+    margin-left: 60px;
+    margin-right: 92px;
+    width: 550px;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 10px;
+    color: #FF9933;
+}
+.search-bar input
+{
+    height: 40px;
+    width: 500px;
+    font-size: 16px;
+    border: none;
+    margin-left: 0px;
+    outline: 0;
+}
+.kinhlup
+{
+    margin-left: 5px;
+}
+.lienhe
+{
+    
+    margin-right: 30px;
+}
+.giohang
+{
+    
+    margin-right: 10px;
+    padding: 15px 0 15px 0;
+}
+.sohang
+{
+    padding: 25px 0 25px 0;
+}
+.first-menu /* Menu ngang cấp 1, menu ông */
+{
+    list-style-type: none ; /*Ẩn chấm tròn trước chữ của menu ngang(danh sách không có thứ tự)*/
+    padding: 7.5px 200px 1px 20px; /*Gồm padding-top, padding-right, padding-bottom và padding-left*/
+    margin-left: -260px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.first-menu1 /* Các phần tử của menu ngang cấp 1 */
+{
+    display: inline; /*Danh sách nằm theo hàng ngang*/
+    padding: 1px 20px 1px;
+    position: relative;
+}
+a
+{
+    text-decoration: none; 
+    color: black;
+    transition: color 0.5s;
+}
+a:hover
+{
+    color: red;
+}
+.second-menu /* Menu dọc cấp 2, menu bố */
+{
+    position: absolute;
+    padding-top: 5px;
+    border-bottom: 1px solid rgb(14, 10, 2);
+    margin-left: 380px;
+    list-style-type: none;
+    text-align: left;
+    width: 180px;
+    padding: 5px 5px;
+    font-size: 16px;
+    background-color: #a1b2b2;
+    display: none;
+}
+.first-menu li:hover ul.second-menu
+{
+    display: block;
+}
+.second-menu1 /* Các phần tử của menu dọc cấp 2 */
+{
+    padding: 8px 0px;
+    border-bottom: 1px solid rgb(174, 170, 170);
+    left: 0px;
+}
+.second-menu1:hover
+{
+    border-bottom: 1px solid rgb(248, 243, 243);
+}
+.third-menu /* Menu dọc cấp 3, menu con */
+{
+    display: none;
+    list-style: none;
+    padding: 8px 0px;
+    margin-left: 186px;
+    margin-top: -35px;
+    width: 200px; 
+    position: absolute; /* Để viết đè lên phần tử cha mà không làm thay đổi vị trí ban đầu của cha */
+}
+
+.second-menu li:hover ul.third-menu
+{
+    display: block;
+    list-style: none;
+}
+.third-menu1 /* Các phần tử của menu dọc cấp 3 */
+{
+    text-decoration: none;
+    background-color: #a1b2b2;
+    border-bottom: 1px solid rgb(174, 170, 170);
+    padding: 8px 0px;
+}
+.third-menu1:hover
+{
+    border-bottom: 1px solid rgb(248, 243, 243);
+}
+.second2-menu
+{
+    position: absolute;
+    background-color: #a1b2b2;
+    padding-top: 5px;
+    border-bottom: 1px solid darkgoldenrod;
+    margin-left: 520px;
+    list-style-type: none;
+    text-align: left;
+    width: 180px;
+    padding: 5px 5px;
+    font-size: 16px;
+    display: none;
+}
+.first-menu li:hover ul.second2-menu
+{
+    display: block;
+}
+.second2-menu1
+{
+    padding: 8px 0px;
+    border-bottom: 1px solid rgb(174, 170, 170);
+
+}
+.second2-menu1:hover
+{
+    border-bottom: 1px solid rgb(248, 243, 243);
+}
+.banner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gallery-display-area
+{
+    overflow: hidden;
+    width: 1150px;
+    margin: 0 auto;
+    height: 500px;
+}
+.gallery-wrap
+{
+    width: 500%;
+    animation: Slideshow 35s infinite;
+}
+.image
+{
+    float: left;
+    height: 500px;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes Slideshow
+{
+    20%
+    {
+        margin-left: 0;
+    }
+    30%
+    {
+        margin-left: -1150;
+    }
+    40%
+    {
+        margin-left: -2300;
+    }
+    50%
+    {
+        margin-left: -3450;
+    }
+    60%
+    {
+        margin-left: 0;
+    }
+    70%
+    {
+        margin-left: -1150
+    }
+    80%
+    {
+        margin-left: -2300;
+    }
+    90%
+    {
+        margin-left: -3450;
+    }
+    100%
+    {
+        margin-left: 0;
+    }
+} 
+.uudai
+{
+    display: flex;
+    margin-top: 20px;
+}
+
+.anh
+{
+    text-align: left;
+    padding-left: 10px;
+}
+.nd
+{
+    
+    margin-top: -90px;
+    text-align: left;
+    margin-left: 90px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h4
+{
+    margin-bottom: 0px;
+}
+.doitra
+{
+    margin-left: 25px;
+}
+.baohanh
+{
+    margin-left: 15px;
+}
+h2  
+{
+    margin-top: 40px;
+}
+.rusticdecor
+{
+    margin-top: 20px;
+}
+.ds
+{
+    width: 1150px;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap; /*Tự căn theo chiều dài trang web*/
+    justify-content: space-between; /*Khoảng cách giữa các thành phần luôn bằng nhau*/
+    list-style: none; /*Bỏ dấu chấm đen trước các danh sách*/
+    flex-basis: 650px;
+    margin-top: 1px;
+    margin-right: 10px;
+    margin-left: -5px;
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+.tranh
+{
+    flex-basis: 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box; /*Thiết lập tất cả chiều rộng, chiều cao của tất cả cả các ptu, bao gồm cả nội dung và viền*/
+    margin-bottom: 10px;
+    text-align: center;
+}
+img /*Thẻ này dùng sẽ trùng với nhiều hình ảnh khác nên sẽ thay đổi kích thước phần RUSTIC DECOR, PHONG CÁCH XƯA CŨ CỔ ĐIỂN trong html */
+{
+    max-width: 100%;
+}
+.img1
+{
+    transition: transform 0.3s ease;
+}
+.img1:hover
+{
+    transform: scale(1.1);
+    color: aqua;
+}
+.anhtoi
+{
+    filter:brightness(50%); /* Giảm độ sáng của ảnh */
+    position: relative;
+    z-index: 0; /* Làm cho lớp ảnh ở phía dưới lớp chữ */
+}
+.container
+{
+    position: relative;
+    width: 1150px;
+}
+.chutronganh
+{
+    z-index: 1; /* Làm cho lớp chữ ở phía trên lớp ảnh */
+    position: absolute;
+    font-size: 25px;
+    border: 2px solid;
+    width: 248px;
+    color: white;
+    margin-top: 100px;
+    border-color: tomato;
+    border-left: none;
+    border-right: none;
+} 
+.chutronganh2
+{
+    z-index: 1; /* Làm cho lớp chữ ở phía trên lớp ảnh */
+    position: absolute;
+    width: 248px;
+    margin-top: 165px;
+    color: white;
+}
+.chuduoianh
+{
+    padding: 5px 5px;
+    background-color: #FF9933;
+}
+.rusticdecor
+{
+    width: 1150px;
+}
+.chuthich
+{
+    margin-bottom: -25px; /* Căn lề dưới */
+}
+.gachngang
+{
+    color: #FF9933; /* Màu cho thành phần */
+    margin-top: -23px; /* Căn lề trên */
+    margin-bottom: 25px;
+}
+.hot 
+{
+    position: absolute; 
+    background-color: red; /* Màu nền */
+    color: white; /* Màu của thành phần */
+    padding: 7px 7px; /* Khoảng cách đến viền trên dưới và trái phải */
+    width: 50px; /* Chiều dài thành phần */
+    border-radius: 20px; /* Độ cong của viền */
+    margin-top: 5px;
+    margin-left: 5px;
+    font-family:'Courier New', Courier, monospace; /* Phông chữ */
+}
+.muahang 
+{
+    text-align: right;
+    margin-top: -21px;
+}
+.muahang button 
+{
+    width: 70px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: #FFCCCC; /* Màu của viền */
+    cursor: pointer;
+}
+.soluong 
+{
+    margin-top: -20px;
+}
+.soluong input 
+{
+    width: 50px;
+    margin-right: -50px;
+}
+.tranhanh
+{
+    overflow: hidden; /* Ẩn phần ảnh bị phóng ra ngoài */
+    display: inline-block; /* Giữ kích thước ban đầu của ảnh */
+}
+.tranhanh img
+{
+    transition: transform 0.2s ease-in-out; /* Hiệu ứng chuyển đổi */
+    display: block; /* Loại bỏ khoảng trắng dưới ảnh */
+}
+.tranhanh:hover img
+{
+    opacity: 0.7; /* Độ mờ của ảnh sau khi rê chuột vào */
+    transform: scale(1.1); /* Hiệu ứng phóng to ảnh */
+    filter: brightness(90%);
+}
+.tensp
+{
+    text-align: left; /* Căn lề trái */
+    font-size: 15px; /* Cỡ chữ */
+    margin-top: 10px;
+    font-family: "Josefin Sans", sans-serif;
+}
+.giatien
+{ 
+    text-align: left;
+    font-size: 16px;
+    margin-top: 17px;
+    color: gray;
+    font-family: "Josefin Sans", sans-serif;
+}
+.bannerduoi
+{
+    position: relative;
+}
+.bannerduoi1
+{
+   margin-bottom: 30px;
+   filter:brightness(60%);
+   z-index: 0;
+}
+.chuanhduoi
+{
+    font-size: 36px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    width: 1150px;
+    text-align: center;
+    margin-top: 140px;
+}
+.chuanhduoi2
+{
+    font-size: 30px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    width: 1150px;
+    text-align: center;
+    margin-top: 180px;
+}
+  
+.btn0
+{
+    position: absolute;
+    z-index: 1;
+    margin-top: -190px;
+    margin-left: 470px;
+}
+.btn0 button
+{
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    background-color: #dec3c3bd;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btn0 button:hover
+{
+    background-color: #417878;
+    transition: background-color 0.5s;
+}
+.slidee
+{
+    margin-left: -30px;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap; /*Tự căn theo chiều dài trang web*/
+    justify-content: space-between; /*Khoảng cách giữa các thành phần luôn bằng nhau*/
+    list-style: none; /*Bỏ dấu chấm đen trước các danh sách*/
+    flex-basis: 650px;
+    margin-top: 10px;
+    margin-right: -30px;
+    margin-left: -30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sss
+{
+    position: relative;
+    transition: transform 0.2s ease-in-out; /* Hiệu ứng chuyển đổi */
+    display: block; /* Loại bỏ khoảng trắng dưới ảnh */
+}
+.sotronganh
+{
+    position: absolute;
+    margin-top: -140px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 252px;
+    display: none;
+    transition: color 0.9s ease;
+    transition-delay: 5s;
+}
+.tranh-number:hover .sotronganh
+{
+    display: block;
+    transition: color 0.1s ease;
+}
+.tranh-number
+{
+    flex-basis: 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box; /*Thiết lập tất cả chiều rộng, chiều cao của tất cả cả các ptu, bao gồm cả nội dung và viền*/
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 30px;
+    transition: color 0.1s ease;
+    overflow: hidden; /* Ẩn phần ảnh bị phóng ra ngoài */
+    display: inline-block; /* Giữ kích thước ban đầu của ảnh */
+}
+.tranh-number:hover .sss
+{
+    opacity: 0.7; /* Độ mờ của ảnh sau khi rê chuột vào */
+    transform: scale(1.1); /* Hiệu ứng phóng to ảnh */
+    filter: brightness(70%);
+}
+.tranh-number a:hover
+{
+    color: white;
+}
+.sss1
+{
+    font-size: 26px;
+    margin-top: 20px;
+    font-family: "Josefin Sans", sans-serif;
+}
+.meovabaiviet
+{
+    background-color: #CCFFFF;
+}
+.ds2
+{
+    margin-left: -30px;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap; /*Tự căn theo chiều dài trang web*/
+    justify-content: space-between; /*Khoảng cách giữa các thành phần luôn bằng nhau*/
+    list-style: none; /*Bỏ dấu chấm đen trước các danh sách*/
+    margin-top: 10px;
+    margin-right: -30px;
+    margin-left: -30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#tranhcongay
+{
+    flex-basis: 33%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box; /*Thiết lập tất cả chiều rộng, chiều cao của tất cả cả các ptu, bao gồm cả nội dung và viền*/
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+#tranhcongay1
+{
+    height: 250px;
+}
+#tieude
+{
+    font-size: 21px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#tieude1
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#ndcon
+{
+    margin-top: 10px;
+}
+#docthem
+{
+    margin-top: 15px;
+    
+}
+#docthem:hover
+{
+    text-decoration: underline;
+    color: #FF9933;
+    transition: color 0.3s;
+}
+.footer
+{
+    margin-top: 20px;
+    background-color: #DDDDDD;
+}
+.shine
+{
+    text-decoration: none;
+}
+.shine:hover
+{
+    text-decoration: underline; /* Hiện gạch chân khi rê chuột vào */
+    color: #FF9933; /* Đổi màu chữ khi rê chuột qua */
+}
+#list-down
+{
+    list-style-type: none ;
+    text-align: left;
+    padding-top: 50px;
+}
+.child-list-down
+{
+    display: inline-flex;
+    margin: 15px ;
+}
+.list-down-first
+{
+    list-style-type: none ;
+    margin-left: -133px;
+    margin-top: 30px;
+}
+.list-down-second
+{
+    list-style-type: none ;
+    margin-left: -104px;
+    margin-top: 30px;
+}
+.list-down-third
+{
+    list-style-type: none ;
+    margin-left: -126px;
+    margin-top: 30px;
+}
+.list-down-fouth
+{
+    list-style-type: none ;
+    margin-left: -126px;
+    margin-top: 30px;
+}
+.list-down-fifth
+{
+    width: 300px;
+    list-style-type: none ;
+    margin-left: -190px;
+    margin-top: 30px;
+    
+}
+.option
+{
+    margin-top: 10px;
+}
+.brand
+{
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+#backtop
+{
+    text-align: right;
+    position: fixed; /* Cố định vị trí */
+    bottom: 40px;
+    right: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: #FF9933;
+}
+button
+{
+    background-color: #FF9933;
+    border: none;
+    cursor: pointer;
+}
+.user
+{
+    width: 50px;
+    margin-left: 1330px;
+    margin-top: -30;
+}
+button a:hover
+{
+    color: black;
+}
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #e9e9e9;
+    border-left: 1px solid #ddd;
+    padding: 20px;
+    /*display: none;  Ẩn giỏ hàng ban đầu */
+    overflow-y: auto; /* Để cuộn nếu nội dung quá nhiều */
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1); /* Đổ bóng để phân biệt với nội dung chính */
+    z-index: 1000;
+}
+
+.cart h2 {
+    margin-top: 0;
+}
+
+.cart button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cart button:hover {
+    background-color: #d32f2f;
+}
+
+.cart .remove-button, .cart .increment-button, .cart .decrement-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.cart .remove-button:hover, .cart .increment-button:hover, .cart .decrement-button:hover {
+    background-color: #d32f2f;
+}
